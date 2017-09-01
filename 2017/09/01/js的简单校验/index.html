@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 随笔 | 沙发小屋</title>
+  <title>js的简单校验 | 沙发小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,极客,编程,代码,java,html,css,css3">
-<meta property="og:type" content="website">
-<meta property="og:title" content="沙发小屋">
-<meta property="og:url" content="http://yoursite.com/tags/随笔/index.html">
+  <meta name="description" content="前段时间总结了一些js的简单校验代码，在这里分享一下：  大陆手机号码的校验1234567891011/*** 大陆手机号码的校验**/_validateMobileFiled (mobile) &amp;#123;    var reg = /^[1][3,4,5,7,8][0-9]&amp;#123;9&amp;#125;$/;    if (reg.test(mobile)) &amp;#123;        ret">
+<meta name="keywords" content="js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js的简单校验">
+<meta property="og:url" content="http://yoursite.com/2017/09/01/js的简单校验/index.html">
 <meta property="og:site_name" content="沙发小屋">
+<meta property="og:description" content="前段时间总结了一些js的简单校验代码，在这里分享一下：  大陆手机号码的校验1234567891011/*** 大陆手机号码的校验**/_validateMobileFiled (mobile) &amp;#123;    var reg = /^[1][3,4,5,7,8][0-9]&amp;#123;9&amp;#125;$/;    if (reg.test(mobile)) &amp;#123;        ret">
+<meta property="og:updated_time" content="2017-09-01T02:30:08.814Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="沙发小屋">
+<meta name="twitter:title" content="js的简单校验">
+<meta name="twitter:description" content="前段时间总结了一些js的简单校验代码，在这里分享一下：  大陆手机号码的校验1234567891011/*** 大陆手机号码的校验**/_validateMobileFiled (mobile) &amp;#123;    var reg = /^[1][3,4,5,7,8][0-9]&amp;#123;9&amp;#125;$/;    if (reg.test(mobile)) &amp;#123;        ret">
   
   
     <link rel="icon" href="/images/favicon.png">
@@ -156,60 +160,186 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-js的简单校验" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/31/就从这里开始/" class="archive-article-date">
-  	<time datetime="2017-08-31T08:41:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-31</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/31/就从这里开始/">就从这里开始</a>
+    <h1 class="article-title" itemprop="name">
+      js的简单校验
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/09/01/js的简单校验/" class="archive-article-date">
+  	<time datetime="2017-09-01T02:13:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>  前段时间总结了一些js的简单校验代码，在这里分享一下：</p>
+<ol>
+<li>大陆手机号码的校验<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment">* 大陆手机号码的校验</span></div><div class="line"><span class="comment">**/</span></div><div class="line">_validateMobileFiled (mobile) &#123;</div><div class="line">    <span class="keyword">var</span> reg = <span class="regexp">/^[1][3,4,5,7,8][0-9]&#123;9&#125;$/</span>;</div><div class="line">    <span class="keyword">if</span> (reg.test(mobile)) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol>
+<li><p>邮箱的校验</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment">* 标准邮箱校验</span></div><div class="line"><span class="comment">**/</span></div><div class="line">_validateEmailFiled (email) &#123;</div><div class="line">    <span class="keyword">var</span> reg = <span class="regexp">/[\w\.\-]+@([\w\-]+\.)+[\w\-]+/</span>;</div><div class="line">    <span class="keyword">if</span> (reg.test(email)) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>身份证的校验</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment">* 调用函数</span></div><div class="line"><span class="comment">**/</span></div><div class="line">_IdCardValidate (idcard,birthdate) &#123;</div><div class="line">    <span class="keyword">this</span>.Wi = [ <span class="number">7</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">6</span>, <span class="number">3</span>, <span class="number">7</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">1</span> ];  <span class="comment">// 加权因子  </span></div><div class="line">    <span class="keyword">this</span>.ValideCode = [ <span class="number">1</span>, <span class="number">0</span>, <span class="number">10</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span> ];  <span class="comment">// 身份证验证位值.10代表X </span></div><div class="line">    idcard = <span class="keyword">this</span>._trim(idcard.replace(<span class="regexp">/ /g</span>, <span class="string">""</span>));               <span class="comment">//去掉字符串头尾空格</span></div><div class="line">    <span class="keyword">if</span> (idcard.length == <span class="number">18</span>) &#123;</div><div class="line">        <span class="keyword">var</span> a_idCard = idcard.split(<span class="string">""</span>);                <span class="comment">// 得到身份证数组</span></div><div class="line">        <span class="keyword">if</span>( <span class="keyword">this</span>._isValidityBrithBy18IdCard(idcard,birthdate) &amp;&amp; <span class="keyword">this</span>._isTrueValidateCodeBy18IdCard(a_idCard))&#123;   <span class="comment">//进行18位身份证的基本验证和第18位的验证</span></div><div class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">        &#125;<span class="keyword">else</span> &#123;</div><div class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">        &#125;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment">* 身份证号码校验</span></div><div class="line"><span class="comment">**/</span></div><div class="line">_isTrueValidateCodeBy18IdCard (a_idCard) &#123;</div><div class="line">    <span class="keyword">var</span> sum = <span class="number">0</span>;                             <span class="comment">// 声明加权求和变量   </span></div><div class="line">    <span class="keyword">if</span> (a_idCard[<span class="number">17</span>].toLowerCase() == <span class="string">'x'</span>) &#123;   </div><div class="line">        a_idCard[<span class="number">17</span>] = <span class="number">10</span>;                    <span class="comment">// 将最后位为x的验证码替换为10方便后续操作          &#125;   </span></div><div class="line">    <span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">17</span>; i++) &#123;   </div><div class="line">        sum += <span class="keyword">this</span>.Wi[i] * a_idCard[i];            <span class="comment">// 加权求和   </span></div><div class="line">    &#125;   </div><div class="line">    <span class="keyword">var</span> valCodePosition = sum % <span class="number">11</span>;                <span class="comment">// 得到验证码所位置   </span></div><div class="line">    <span class="keyword">if</span> (a_idCard[<span class="number">17</span>] == <span class="keyword">this</span>.ValideCode[valCodePosition]) &#123;   </div><div class="line">        <span class="keyword">return</span> <span class="literal">true</span>;   </div><div class="line">    &#125; <span class="keyword">else</span> &#123;   </div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;   </div><div class="line">    &#125; </div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment">* 身份证号码与输入的生日作对比校验</span></div><div class="line"><span class="comment">**/</span></div><div class="line">_isValidityBrithBy18IdCard (idCard,birthdate) &#123;</div><div class="line">    <span class="keyword">var</span> year =  idCard.substring(<span class="number">6</span>,<span class="number">10</span>);</div><div class="line">    <span class="keyword">var</span> month = idCard.substring(<span class="number">10</span>,<span class="number">12</span>);</div><div class="line">    <span class="keyword">var</span> day = idCard.substring(<span class="number">12</span>,<span class="number">14</span>);</div><div class="line">    <span class="keyword">var</span> byear = birthdate.split(<span class="string">'-'</span>)[<span class="number">0</span>];</div><div class="line">    <span class="keyword">var</span> bmonth = birthdate.split(<span class="string">'-'</span>)[<span class="number">1</span>];</div><div class="line">    <span class="keyword">var</span> bday = birthdate.split(<span class="string">'-'</span>)[<span class="number">2</span>];</div><div class="line">    <span class="keyword">if</span> ((year == byear) &amp;&amp; (month == bmonth) &amp;&amp; (day == bday)) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment">* 去除身份证号数组空格</span></div><div class="line"><span class="comment">**/</span></div><div class="line">_trim (str) &#123;</div><div class="line">    <span class="keyword">return</span> str.replace(<span class="regexp">/(^\s*)|(\s*$)/g</span>, <span class="string">""</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我买彩票~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/wxpay.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/01/js的简单校验/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/08/31/就从这里开始/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">就从这里开始</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
 
 
           </div>
@@ -232,9 +362,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
